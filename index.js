@@ -44,9 +44,10 @@ gong.prototype = {
 
   setSwitchOnCharacteristic: function (on, next) {
     const me = this;
+    console.log("would set to: " + on)
     request({
       url: me.postUrl,
-      body: {'targetState': on},
+      body: {'targetState': 'on'},
       method: 'POST',
       headers: {'Content-type': 'application/json'}
     },
@@ -74,7 +75,7 @@ function gong(log, config) {
   this.getUrl = url.parse(config['getUrl']);
   this.postUrl = url.parse(config['postUrl']);
   this.postUrl = "http://192.168.1.101:4664/gong"
-  console.log("postURL" + this.postURL)
+  console.log("postURL" + this.postUrl)
 }
 
 // gong.prototype = {
