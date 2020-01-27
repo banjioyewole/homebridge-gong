@@ -18,8 +18,8 @@ You have to be in the directory above it to be able to run this command
 Register in Homekit using:
 
 
-```{
-  "accessory": "homebrige-gong",
-  "getUrl": "http://192.168.1.101:4664/",
-  "postUrl": "http://192.168.1.101:4664/gong"
-}```
+```"accessories": [{
+                "accessory": "homebridge-gong",
+                "getUrl": "http://192.168.1.101:4664/",
+                "postUrl": "http://192.168.1.101:4664/gong"
+        }]```
