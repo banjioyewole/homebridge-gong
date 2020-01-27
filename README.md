@@ -12,3 +12,13 @@ https://blog.theodo.com/2017/08/make-siri-perfect-home-companion-devices-not-sup
 Tl;dr
 
 npm install -g homebridge-gong
+
+
+Register in homekit using:
+
+
+```{
+  "accessory": "homebrige-gong",
+  "getUrl": "http://192.168.1.101:4664/",
+  "postUrl": "http://192.168.1.101:4664/gong"
+}```
