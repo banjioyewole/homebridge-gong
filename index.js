@@ -50,7 +50,8 @@ mySwitch.prototype = {
         me.log(error.message);
         return next(error);
       }
-      return next(null, body.currentState);
+
+      return next(null, 'off');
     });
   },
 
