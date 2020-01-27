@@ -11,10 +11,11 @@ https://blog.theodo.com/2017/08/make-siri-perfect-home-companion-devices-not-sup
 
 Tl;dr
 
-npm install -g homebridge-gong
+`npm install -g homebridge-gong`
+You have to be in the directory above it to be able to run this command
 
 
-Register in homekit using:
+Register in Homekit using:
 
 
 ```{
