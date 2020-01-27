@@ -53,7 +53,7 @@ gong.prototype = {
     function (error, response) {
       if (error) {
         console.log('STATUS: ' + response)
-        me.log('STATUS: ' + response.statusCode);
+        // me.log('STATUS: ' + response.statusCode);
         me.log(error.message);
         return next(); //did remove error
       }
@@ -73,6 +73,7 @@ function gong(log, config) {
   this.log = log;
   this.getUrl = url.parse(config['getUrl']);
   this.postUrl = url.parse(config['postUrl']);
+  console.log("postURL" + this.postURL)
 }
 
 // gong.prototype = {
