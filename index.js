@@ -1,7 +1,6 @@
 var Service, Characteristic;
 
 module.exports = function (homebridge) {
-  print("will register")
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
   homebridge.registerAccessory("homebridge-gong", "Gong", mySwitch);
