@@ -52,9 +52,10 @@ gong.prototype = {
     },
     function (error, response) {
       if (error) {
+        console.log('STATUS: ' + response)
         me.log('STATUS: ' + response.statusCode);
         me.log(error.message);
-        return next(error);
+        return next(); //did remove error
       }
       return next();
     });
