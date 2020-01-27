@@ -7,14 +7,14 @@
     "homebridge-plugin"
   ],
   "repository": {
-    "type": "git",
-    "url": "git://github.com/banjioyewole/homebridge-gong.git"
-  },
-  "bugs": {
-    "url": "http://github.com/example/homebridge/issues"
-  },
-  "engines": {
-    "node": ">=0.12.0",
-    "homebridge": ">=0.2.0"
-  }
+   "type": "git",
+   "url": "git://github.com/example/homebridge.git"
+ },
+ "bugs": {
+   "url": "http://github.com/example/homebridge/issues"
+ },
+ "engines": {
+   "node": ">=0.12.0",
+   "homebridge": ">=0.2.0"
+ }
 }
