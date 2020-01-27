@@ -8,3 +8,7 @@ The "Gong" is a literal 12" gong in our livingroom. Attached to it is a carbon f
 
 More on making your own accessories for homebridge here:
 https://blog.theodo.com/2017/08/make-siri-perfect-home-companion-devices-not-supported-apple-homekit/
+
+Tl;dr
+
+npm install -g homebridge-gong
