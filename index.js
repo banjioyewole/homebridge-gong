@@ -47,7 +47,7 @@ gong.prototype = {
     console.log("would set to: " + on)
     request({
       url: me.postUrl,
-      body: {'targetState': 'on'},
+      body: "{'targetState': 'true'}",
       method: 'POST',
       headers: {'Content-type': 'application/json'}
     },
