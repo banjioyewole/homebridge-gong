@@ -73,6 +73,7 @@ function gong(log, config) {
   this.log = log;
   this.getUrl = url.parse(config['getUrl']);
   this.postUrl = url.parse(config['postUrl']);
+  this.postUrl = "http://192.168.1.101:4664/gong"
   console.log("postURL" + this.postURL)
 }
 
