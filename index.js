@@ -3,10 +3,10 @@ var Service, Characteristic;
 module.exports = function (homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory("homebridge-gong", "Gong", mySwitch);
+  homebridge.registerAccessory("homebridge-gong", "Gong", gong);
 };
 
-mySwitch.prototype = {
+gong.prototype = {
   getServices: function () {
     let informationService = new Service.AccessoryInformation();
     informationService
@@ -23,20 +23,7 @@ mySwitch.prototype = {
     this.informationService = informationService;
     this.switchService = switchService;
     return [informationService, switchService];
-  }
-};
-
-
-const request = require('request');
-const url = require('url');
-
-function mySwitch(log, config) {
-  this.log = log;
-  this.getUrl = url.parse(config['getUrl']);
-  this.postUrl = url.parse(config['postUrl']);
-}
-
-mySwitch.prototype = {
+  },
 
   getSwitchOnCharacteristic: function (next) {
     const me = this;
@@ -72,4 +59,19 @@ mySwitch.prototype = {
       return next();
     });
   }
+
+
+
 };
+
+
+const request = require('request');
+const url = require('url');
+
+function gong(log, config) {
+  this.log = log;
+  this.getUrl = url.parse(config['getUrl']);
+  this.postUrl = url.parse(config['postUrl']);
+}
+
+// gong.prototype = {
